@@ -1,0 +1,65 @@
+<link rel="import"  href="bower_components/polymer/polymer.html">
+<link rel="import" href="bower_components/google-apis/google-jsapi.html">
+
+<polymer-element name="bar-chart" attributes="url">
+  <template>
+    <style>
+    :host {
+      display: block;
+    }
+    
+    #chart {
+      display: block;
+      height: 500px;
+      width: 100%;
+    }
+
+    </style>
+  
+
+  <google-jsapi on-api-load="{{readyForAction}}"></google-jsapi>
+  <div id="chart"></div>
+  </template>
+  <script>
+  Polymer({
+
+    created:function(){
+      this.colors=['#B90504','#443333','#950100','#e9d9d9','#fdecec']
+    },
+    readyForAction:function(){
+       google.load("visualization", "1", {
+            packages: ['corechart'],
+            callback: function() {
+              this.drawChart()
+            }.bind(this)
+          });
+    },
+
+    drawChart:function(){
+      var query = new google.visualization.Query(
+      this.url);
+      query.send(function(response){
+        this.renderChart(response);
+      }.bind(this))
+    },
+
+    renderChart:function(response){
+       var options = {
+          title: ' ',
+          hAxis: {title: ' ',  titleTextStyle: {color: '#333'}},
+          animation:{
+            duration:800,
+            easing:'linear',
+            startup:true
+          },
+          colors:this.colors
+
+        };
+
+      var data = response.getDataTable();
+      var chart = new google.visualization.BarChart(this.$.chart);
+      chart.draw(data, options);
+    }
+  });
+  </script>
+</polymer-element>
