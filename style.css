@@ -255,49 +255,47 @@ paper-dropdown-menu {
     left: 17%;
 }
 
-area-chart.small::shadow #chart {
+sheets-area-chart.small::shadow #chart {
     height: 400px;
 }
 
-bar-chart.small::shadow #chart {
+sheets-bar-chart.small::shadow #chart {
     height: 400px;
 }
 
-bubble-chart.small::shadow #chart {
+sheets-bubble-chart.small::shadow #chart {
     height: 400px;
 }
 
-candlestick-chart.small::shadow #chart {
+sheets-candlestick-chart.small::shadow #chart {
     height: 400px;
 }
 
-column-chart.small::shadow #chart {
+sheets-column-chart.small::shadow #chart {
     height: 400px;
 }
 
-combo-chart.small::shadow #chart {
+sheets-combo-chart.small::shadow #chart {
     height: 400px;
 }
 
-geo-chart.small::shadow #chart {
+sheets-geo-chart.small::shadow #chart {
     height: 400px;
 }
 
-histogram-chart.small::shadow #chart {
+sheets-histogram-chart.small::shadow #chart {
     height: 400px;
 }
 
-line-chart.small::shadow #chart {
+sheets-line-chart.small::shadow #chart {
     height: 400px;
 }
 
-pie-chart.small::shadow #chart {
+sheets-pie-chart.small::shadow #chart {
     height: 400px;
 }
 
-scatter-chart.small::shadow #chart {
+sheets-scatter-chart.small::shadow #chart {
     height: 400px;
 }
 /*Charts*/
-
-
