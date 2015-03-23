@@ -1,5 +1,5 @@
 {
-  "name": "bar-chart",
+  "name": "sheets-bar-chart",
   "version": "0.0.1",
   "authors": [
     "Laura Camellini <jeeltcraft@gmail.com>"
@@ -23,8 +23,6 @@
     "tests"
   ],
   "dependencies": {
-    "paper-elements": "Polymer/paper-elements#~0.5.5",
-    "core-elements": "Polymer/core-elements#~0.5.5",
     "polymer": "Polymer/polymer#~0.5.5",
     "webcomponents": "Polymer/webcomponents",
     "google-apis": "~0.4.4"
