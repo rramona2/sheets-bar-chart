@@ -1,0 +1,303 @@
+/* 
+    Created on : 15-Feb-2015, 19:14:08
+    Author     : Jeeltcraft
+*/
+
+
+html, body, core-header-panel {
+    height:100%;
+}
+html{
+    font-family: 'Roboto';
+    font-size: 16px;
+    color: #333333;
+}
+
+body.single-post{
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Roboto';
+    color:#950100;
+    font-size: 31px;
+    margin-bottom: 3rem;
+}
+core-submenu, .h2 {
+    color:#E8E8E8;
+    text-transform: uppercase;
+    font-size:22px;
+}
+h2 {
+    color:#333333;
+    text-transform: uppercase;
+    font-size:20px;
+}
+h3 {
+    color:#950100;
+    text-transform: capitalize;
+    font-size:22px;
+}
+a{
+    color:#B90504;
+    text-decoration: none!important;
+}
+
+a:hover {
+    color:#950100;
+    text-decoration: none!important;
+}
+
+a:visited {
+    color:#950100;
+    text-decoration: none!important;
+}
+
+p {
+    display:block;
+    padding: 0 4em;
+    margin: 1em 0;
+}
+
+@media screen and (max-width:700px) {
+    p {
+        padding: 0 2em;
+
+        font-size: 18px;
+    }
+}
+
+.divider {
+    display: block;
+    width: 90%;
+    height: 2em;
+    border-bottom: 1px solid #e9d9d9;
+}
+paper-fab{
+    background:#B90504;
+    color:#fff;
+}
+
+paper-icon-button{
+    color:#B90504;
+}
+paper-button {
+    color:#B90504;
+}
+
+[main] {
+    background-color: #fff;
+    height:100%;
+}
+[drawer]{
+    background-color: #333333;
+    padding-left: 1em;
+    height: 2000px;
+    color:#f6f6f6;
+}
+core-selector > #drawer{
+    z-index:3;
+}
+core-toolbar {
+    background-color: #e8e8e8;
+}
+
+.navigation{
+    margin-top: 0!important;
+    margin-bottom: 1em!important;
+}
+.container {
+    padding: 1em;
+}
+.container > h2 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.container-map {
+    padding: 0;
+    margin: 0;
+}
+
+#logo {
+    margin-top: 10px;
+    width: 60px;
+}
+
+.modal-btn {
+    color: #B90504!important;
+    float: right;
+}
+
+core-toolbar.tall {
+    background: url('images/sappi-a-mo.svg') no-repeat center top fixed; 
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    background-color: #e8e8e8;
+    height:400px;
+}
+
+@media screen and (max-width:600px){
+    core-toolbar.tall {
+        background: url('images/sappi-a-mo_mobile.svg') no-repeat center top fixed; 
+        -webkit-background-size: contain;
+        -moz-background-size: contain;
+        -o-background-size: contain;
+        background-size: contain;
+        background-color: #e8e8e8;
+        height:400px;
+    }
+    core-toolbar.tall > h1 {
+        visibility:hidden;
+    }
+    core-toolbar.tall > paper-button{
+        margin-left: 20px!important;
+    }
+    core-toolbar > paper-button {
+        margin-left:35px!important;
+    }
+    core-toolbar > h1 {
+        font-size:21px;
+        margin-left: 75px!important;
+    }
+    core-toolbar > .homespan {
+        display:none;
+    }
+}
+@media screen and (min-width:1280px) {
+    core-toolbar.tall {
+        background: url('images/sappi-a-mo_large.svg') no-repeat center top fixed; 
+        -webkit-background-size: contain;
+        -moz-background-size: contain;
+        -o-background-size: contain;
+        background-size: contain;
+        background-color: #e8e8e8;
+        height:400px;
+    }
+}
+
+#main-toolbar{
+    min-height: 80px;
+}
+
+#scrolldown {
+    background-color: #e8e8e8;
+
+    border-bottom-right-radius: 50%;  
+    border-bottom-left-radius: 50%;
+}
+.api{
+    z-index: 10;
+    top: 1.5em;
+    right: 1em;
+}
+
+#api {
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.close {
+    float:right!important;
+    color:#f6f6f6;
+}
+core-item {
+    font-size:18px;
+}
+core-submenu > core-item {
+    color:#f6f6f6;
+    text-transform: capitalize;
+
+}
+core-item.core-selected{
+    padding:0 1em;
+    background: rgba(153,1,0, 0.4);
+    transition: linear .4s;
+}
+.post-menu >core-item {
+    font-size: 1.2em;
+}
+#section2 {
+    height:3000px;
+}
+
+google-map {
+    display: block;
+}
+
+// article inline interactive viz
+
+.container-map-small {
+    height:400px;
+}
+
+map-sheet.small::shadow google-map {
+    height: 400px;
+}
+
+.viz {
+    width: 70%;
+    border:1px solid #e8e8e8;
+    margin: 3em auto;
+    min-height: 400px;
+}
+
+paper-dropdown-menu {
+    position:absolute;
+    z-index:2;
+    background:white;
+    padding-left:10px;
+    border:1px solid #B90504!important;
+    left: 17%;
+}
+
+area-chart.small::shadow #chart {
+    height: 400px;
+}
+
+bar-chart.small::shadow #chart {
+    height: 400px;
+}
+
+bubble-chart.small::shadow #chart {
+    height: 400px;
+}
+
+candlestick-chart.small::shadow #chart {
+    height: 400px;
+}
+
+column-chart.small::shadow #chart {
+    height: 400px;
+}
+
+combo-chart.small::shadow #chart {
+    height: 400px;
+}
+
+geo-chart.small::shadow #chart {
+    height: 400px;
+}
+
+histogram-chart.small::shadow #chart {
+    height: 400px;
+}
+
+line-chart.small::shadow #chart {
+    height: 400px;
+}
+
+pie-chart.small::shadow #chart {
+    height: 400px;
+}
+
+scatter-chart.small::shadow #chart {
+    height: 400px;
+}
+/*Charts*/
+
+

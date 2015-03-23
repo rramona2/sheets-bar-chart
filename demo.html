@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--
+Author: Laura Camellini
+Web: www.jeeltcraft.com
+-->
+<html>
+    <head>
+        <title>Bar Chart Dashboard</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="mobile-web-app-capable" content="yes">
+        <script src="bower_components/webcomponentsjs/webcomponents.min.js"></script>
+        <script src="bower_components/web-animations-js/web-animations.min.js"></script>
+        <link rel="import" href="bower_components/polymer/polymer.html">
+        <link rel="import" href="bower_components/paper-elements/paper-elements.html">
+        <link rel="import" href="bower_components/core-elements/core-elements.html">
+        <link rel="import" href="bar-chart.html">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body fullbleed unresolved>
+    <template is="auto-binding" id="post-theme">
+        <core-drawer-panel rightDrawer >
+            <!-- navigation sidebar -->
+            <core-header-panel drawer>
+                <core-toolbar>
+                    <span flex></span>
+                    <h2>Navigation</h2>
+                    <span flex></span>
+                </core-toolbar>
+                <core-menu class="post-menu" selected="{{page}}" valueattr="data-category">
+                    <core-item data-category="home" label="Home"></core-item>
+                    <core-item data-category="portfolio" label="Portfolio"></core-item>
+                    <core-item data-category="contact" label="Contact"></core-item>
+                </core-menu>
+            </core-header-panel>
+            <!-- end navigation sidebar -->
+            <core-header-panel main>
+                <!-- toolbar main -->
+                <core-toolbar>
+                    <paper-icon-button icon="arrow-back"></paper-icon-button>
+                    <div flex></div><h1>Title</h1>
+                    <paper-icon-button icon="menu" core-drawer-toggle></paper-icon-button>
+                </core-toolbar>
+                <!-- end toolbar main -->
+                <!-- content area -->
+                <div class="container" fit layout vertical>
+                    <core-pages id="pages" selected="{{page}}" valueattr="data-category">
+                        <section data-category="home">
+                            <bar-chart url="https://docs.google.com/spreadsheets/d/1WF3p1TT_vhB2crb5X802r0KqM_PvXErlvP1xvtY6-Ak/edit#gid=0"></bar-chart>
+                        </section>
+                        <section data-category="portfolio">
+                        <bar-chart url="https://docs.google.com/spreadsheets/d/1Cu5wxTZHMMZJ0EiT2WbQlqaS8rie7F1CjAOXytzBHCI/edit#gid=0"></bar-chart>
+                        </section>
+                        <section data-category="contact">
+                           <bar-chart url="https://docs.google.com/spreadsheets/d/1jdLJcgiURYoiUwcGe_8IT0B-xBQPpYl5fi6rp4-u7bI/edit#gid=0"></bar-chart>
+                        </section>
+                    </core-pages>
+                </div>
+            </core-header-panel>
+        </core-drawer-panel>
+    </template>
+    <script src="single.js"></script>
+</body>
+</html>
