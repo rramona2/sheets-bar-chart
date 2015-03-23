@@ -5,7 +5,7 @@
     "Laura Camellini <jeeltcraft@gmail.com>"
   ],
   "description": "google-sheets data to google-bar-chart element, created for spaghettiopendata.org",
-  "main": "bar-chart.html",
+  "main": "sheets-bar-chart.html",
   "keywords": [
     "opendata",
     "bar-chart",
